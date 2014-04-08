@@ -1,0 +1,26 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "goinstant examples",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "harp server --port 1111"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/colinmacdonald/goinstant-examples.git"
+  },
+  "keywords": [
+    "goinstant"
+  ],
+  "author": "Colin MacDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinmacdonald/goinstant-examples/issues"
+  },
+  "homepage": "https://github.com/colinmacdonald/goinstant-examples",
+  "dependencies": {
+    "harp": "*"
+  }
+}

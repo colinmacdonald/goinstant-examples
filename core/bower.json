@@ -1,0 +1,20 @@
+{
+  "name": "goinstant-examples",
+  "version": "v1.0.0",
+  "homepage": "https://github.com/colinmacdonald/goinstant-examples",
+  "authors": [
+    "Colin MacDonald <colin@goinstant.com>"
+  ],
+  "description": "goinstant examples",
+  "main": "index.html",
+  "keywords": [
+    "goinstant"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.*",
+    "lodash": "*",
+    "bootstrap": "3.0.*"
+  }
+}
