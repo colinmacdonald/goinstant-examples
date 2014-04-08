@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://cdn.goinstant.net/v1/platform.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/goangular/dist/goangular.js"></script>
+    <script src="js/example.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body ng-app="app">
+    <div class="container" ng-controller="exampleCtrl">
+    <form ng-submit="list.$createNew()" >
+      <input type="text" ng-model="title" />
+      <button type="submit">Create!</button>
+    </form>
+      <ul class="list-unstyled">
+        <li ng-click="list.$remove(item.$name)" ng-repeat="item in list | keyFilter | orderBy:'-$name'">
+        <span ng-show="item.title">{{item.title}} - {{item.$name}}</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
